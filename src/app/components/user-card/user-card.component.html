@@ -1,0 +1,24 @@
+<div class="card text-center shadow-sm">
+   <div class="card-body">
+      <!-- Imagen del usuario -->
+      <div class="d-flex justify-content-center">
+         <div class="rounded-circle border" style="width: 100px; height: 100px; overflow: hidden; background: blue;">
+            <img [src]="user.image" class="w-100 h-100">
+         </div>
+      </div>
+      <!-- Nombre -->
+      <h6 class="mt-3">{{user.first_name}} {{user.last_name}}</h6>
+      <!-- Botones de acción -->
+      <div class="d-flex justify-content-around mt-3">
+         <a class="btn btn-light border btn-sm" [routerLink]="['/user', user._id]">
+            <i class="fas fa-search"></i> Ver
+         </a>
+         <a class="btn btn-light border btn-sm" [routerLink]="['/updateuser', user._id]">
+            <i class="fas fa-sync-alt"></i> Editar
+         </a>
+         <a class="btn btn-light border btn-sm text-danger" (click)="deleteUser(user._id)">
+            <i class="fas fa-trash"></i> Borrar
+         </a>
+      </div>
+   </div>
+</div>

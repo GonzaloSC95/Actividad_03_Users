@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.main-font {
+   font-family: 'Lobster', cursive;
+}
+
+/* Media queries */
+@media (max-width: 1319px) {
+   footer{
+      padding-top: 3em;
+   }
+}
+@media (max-width: 845px) {
+   .header-center {
+      justify-content: center !important;
+   }
+   .header-center a {
+      justify-content: center !important;
+      width: 100%;
+      text-align: center;
+   }
+   .header-center ul {
+      justify-content: center !important;
+      width: 100%;
+      text-align: center;
+      margin-top: 1em;
+   }
+   .header-center ul li{
+      padding: 1em;
+   }
+}
