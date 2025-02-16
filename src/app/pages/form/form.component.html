@@ -23,6 +23,10 @@
          @if(checkControl('username', 'required')){
          <p class="text-danger">Campo Obligatorio</p>
          }
+         @else if(userForm.hasError('usernameExists'))
+         {
+         <p class="text-danger">El nombre de usuario ya existe</p>
+         }
       </div>
 
       <div class="mb-3">

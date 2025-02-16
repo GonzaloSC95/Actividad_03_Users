@@ -27,7 +27,7 @@ export class UserListComponent {
   //ngOnInit
   async ngOnInit() {
     try {
-      this.users = await this.userService.getAll();
+      this.users = await this.userService.getArrayUsersInMemory();
     } catch (error) {
       console.error('Error al obtener usuarios:', error);
     }
