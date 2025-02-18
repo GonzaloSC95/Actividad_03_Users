@@ -1,11 +1,11 @@
 <div class="container">
-   <h4 class="text-center m-3">{{user.first_name}} {{user.last_name}}</h4>
-   <div class="card p-3 shadow-sm">
+   <h4 class="text-center m-3 title-view">{{user.first_name}} {{user.last_name}}</h4>
+   <div class="card p-3 shadow-sm card-view">
       <div class="row align-items-center">
          <!-- Imagen del usuario -->
          <div class="col-md-4 text-center">
-            <div class="rounded-circle border d-inline-block">
-               <img [src]="user.image" class="w-100 h-100 rounded-circle" alt="Imagen de perfil">
+            <div class="rounded-circle border d-inline-block img-view">
+               <img [src]="user.image" class="w-100 h-100 rounded-circle img-view" alt="Imagen de perfil">
             </div>
          </div>
 
@@ -20,12 +20,12 @@
             <p><strong>Email:</strong> <span> {{user.email}} </span></p>
 
             <!-- Botonera -->
-            <div class="mt-4">
+            <div class="mt-4 btn-view">
                <a class="btn btn-outline-danger me-2" (click)="deleteUser(user._id)"><i
                      class="fas fa-trash"></i>Eliminar</a>
                <a class="btn btn-outline-primary me-2" [routerLink]="['/updateuser', user._id]"><i class=" fas
                   fa-edit"></i>Editar</a>
-               <a class="btn btn-outline-secondary" [routerLink]="['/home']"><i class="fas fa-arrow-left"></i> Volver a
+               <a class="btn btn-outline-secondary" [routerLink]="['/home']"><i class="fas fa-arrow-left"></i> Volver al
                   listado</a>
             </div>
          </div>
