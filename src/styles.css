@@ -49,21 +49,24 @@ header, main, footer {
    .title-view {
       font-size: 1.2em !important;
       display: flex !important;
-      text-align: center !important;
+      justify-content: space-around !important;
    }
    a i,button i{
       font-size: 1em !important;
    }
    .card-view {
-      width: 90% !important;
+      width: 99% !important;
    }
    .img-view {
       width: 70% !important;
       height: 70% !important;
       margin-bottom: 0.5em;
    }
+   .btn-view {
+      font-size: 0.8em !important;
+   }
    .btn-view a{
-      font-size: 0.9em;
+      font-size: 0.9em !important;
    }
    .header-center {
       width: 90% !important;
