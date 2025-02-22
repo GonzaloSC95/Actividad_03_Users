@@ -90,6 +90,10 @@ export class UserService {
 
   //Validaciones
   usernameExists(username: any) {
-    return this.arrayUsersInMemory.some((user) => user.username === username);
+    if (this.arrayUsersInMemory === undefined) {
+      return false;
+    } else {
+      return this.arrayUsersInMemory.some((user) => user.username === username);
+    }
   }
 }
